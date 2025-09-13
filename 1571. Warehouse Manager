@@ -1,0 +1,5 @@
+SELECT DISTINCT p.product_name
+FROM Products p
+JOIN Warehouse w
+    ON p.product_id = w.product_id
+WHERE w.units >= 100;
